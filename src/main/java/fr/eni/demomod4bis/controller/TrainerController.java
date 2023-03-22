@@ -24,8 +24,8 @@ public class TrainerController {
         return "view-trainer-form";
     }
     @GetMapping("/identite")
-    public String idTrainer(String prenom, String nom) {
-        System.out.println(prenom+ " "+ nom);
+    public String idTrainer(String prenom, String nom,int age) {
+        System.out.println(prenom+ " "+ nom + " "+ age);
         return "view-trainer-form";
     }
 }
