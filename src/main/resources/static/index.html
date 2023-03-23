@@ -10,5 +10,17 @@
     <a href="trainers/detail?email">Paramètre n’a pas de valeur associée</a><br>
     <a href="trainers/detail">Accéder à la vue sans le paramètre</a><br>
     <a href="trainers/identite?nom=Legrand&prenom=Joe&age=20">Plusieurs paramètres</a><br>
+
+    <h2>Variables de la requête:</h2>
+    <a href="trainers/detail/variable/sgobin@campus-eni.fr">Accéder au détail du formateur</a><br>
+    <a href="trainers/detail/variable/">Accéder à la vue sans la variable</a>
+
+<form action="trainers/identite" method="post">
+    <p>Nom: <input type="text" name="nom"></p>
+    <p>Prénom: <input type="text" name="prenom"></p>
+    <p>Age: <input type="number" name="age"></p>
+    <p><button>Envoyer</button></p>
+</form>
+
 </body>
 </html>
